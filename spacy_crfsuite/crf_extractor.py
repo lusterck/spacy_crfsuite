@@ -314,7 +314,7 @@ class CRFExtractor:
         if neg_features:
             ret += "\n\nNegative features:\n"
             ret += "\n".join(
-                f"{weight:.6f} {label:10} {attr}" for (attr, label), weight in pos_features
+                f"{weight:.6f} {label:10} {attr}" for (attr, label), weight in neg_features
             )
 
         return ret
